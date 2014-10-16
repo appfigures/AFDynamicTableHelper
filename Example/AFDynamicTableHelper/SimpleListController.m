@@ -87,11 +87,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [self.tableHelper tableView:tableView cellForRowAtIndexPath:indexPath];
-//    return [tableView dequeueReusableCellWithIdentifier:@"myDynamicCell" forIndexPath:indexPath];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return 100;
     return [self.tableHelper tableView:tableView heightForRowAtIndexPath:indexPath];
 }
 

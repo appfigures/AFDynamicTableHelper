@@ -42,7 +42,7 @@ A simple use-case looks something like this:
         return [self.tableHelper tableView:tableView heightForRowAtIndexPath:indexPath];
     }
 
-Check out a complete example in the [demo project].
+Check out a complete example in the [demo project](https://github.com/appfigures/AFDynamicTableHelper/blob/master/Example/AFDynamicTableHelper/SimpleListController.m).
 
 ### Customizing your cells
 

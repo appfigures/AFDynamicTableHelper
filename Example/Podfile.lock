@@ -1,0 +1,14 @@
+PODS:
+  - AFDynamicTableHelper (0.1.0)
+
+DEPENDENCIES:
+  - AFDynamicTableHelper (from `../`)
+
+EXTERNAL SOURCES:
+  AFDynamicTableHelper:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFDynamicTableHelper: f8c8e7d2081c92bb39a17444084276627f9bb660
+
+COCOAPODS: 0.34.2

@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'AFDynamicTableHelper', :exclusive => true do
+  pod "AFDynamicTableHelper", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "AFDynamicTableHelper", :path => "../"
+
+  
+end

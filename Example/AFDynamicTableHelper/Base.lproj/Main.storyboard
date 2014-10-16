@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="04N-Be-Rdm">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Simple List Controller-->
+        <scene sceneID="Ikl-L9-1SB">
+            <objects>
+                <tableViewController id="04N-Be-Rdm" customClass="SimpleListController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="22" sectionFooterHeight="22" id="Je0-U0-9so">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myDynamicCell" id="k2C-Sl-DO2" customClass="MyDynamicTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k2C-Sl-DO2" id="ro2-XC-6Cf">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilb-I7-Hu6">
+                                            <rect key="frame" x="8" y="8" width="304" height="20"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="ltT-DE-Qep">
+                                            <rect key="frame" x="8" y="36" width="304" height="20"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ltT-DE-Qep" secondAttribute="trailing" constant="8" id="K6z-Rh-Xb2"/>
+                                        <constraint firstItem="ltT-DE-Qep" firstAttribute="leading" secondItem="ro2-XC-6Cf" secondAttribute="leading" constant="8" id="POx-5v-GAI"/>
+                                        <constraint firstItem="ltT-DE-Qep" firstAttribute="top" secondItem="Ilb-I7-Hu6" secondAttribute="bottom" constant="8" id="Uj6-k4-c3V"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ilb-I7-Hu6" secondAttribute="trailing" constant="8" id="co5-Qs-2S3"/>
+                                        <constraint firstItem="Ilb-I7-Hu6" firstAttribute="top" secondItem="ro2-XC-6Cf" secondAttribute="top" constant="8" id="kju-v1-dXV"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ltT-DE-Qep" secondAttribute="bottom" constant="8" id="lVx-UI-lLa"/>
+                                        <constraint firstItem="Ilb-I7-Hu6" firstAttribute="leading" secondItem="ro2-XC-6Cf" secondAttribute="leading" constant="8" id="mhe-rE-caP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bodyLabel" destination="ltT-DE-Qep" id="DdF-GK-GjZ"/>
+                                    <outlet property="headerLabel" destination="Ilb-I7-Hu6" id="nmF-L4-zUf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="04N-Be-Rdm" id="T0L-Ud-Jdj"/>
+                            <outlet property="delegate" destination="04N-Be-Rdm" id="aWS-aa-nE9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jaa-Vc-4Vj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="111"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
